@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="141.161">
+<testcase classname="users could add item to cart" name="guest user click on hamburger-menu icon" time="12.078">
+<system-out><![CDATA[Given guest user navigate Amazon Website....................................passed
+Then guest user should be in amazon home page...............................passed
+When guest user click on hamburger-menu icon................................passed
+Then Side menu of products opens............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could add item to cart" name="guest user navigate to computers And Tablets Page" time="15.986">
+<system-out><![CDATA[Given guest user navigate Amazon Website....................................passed
+Then guest user should be in amazon home page...............................passed
+Given guest user click on hamburger-menu icon...............................passed
+When guest user click on Computers tab......................................passed
+And guest user click on Computers & Tablets tab.............................passed
+Then computers And Tablets Page opens.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could add item to cart" name="guest user filters to Samsung Items" time="20.365">
+<system-out><![CDATA[Given guest user navigate Amazon Website....................................passed
+Then guest user should be in amazon home page...............................passed
+Given guest user navigate to computers And Tablets Page.....................passed
+When guest user click on samsung filter.....................................passed
+Then samsung checkbox is checked............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could add item to cart" name="Add item to the Cart" time="45.451">
+<system-out><![CDATA[Given guest user navigate Amazon Website....................................passed
+Then guest user should be in amazon home page...............................passed
+Given guest user navigate to computers And Tablets Page.....................passed
+And guest user click on samsung filter......................................passed
+When guest user click on product "2" block..................................passed
+And guest user click on Add to cart button..................................passed
+Then carts items increases by one...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could add item to cart" name="guest user Remove item from cart" time="46.981">
+<system-out><![CDATA[Given guest user navigate Amazon Website....................................passed
+Then guest user should be in amazon home page...............................passed
+Given guest user navigate to computers And Tablets Page.....................passed
+And guest user click on samsung filter......................................passed
+When guest user click on product "2" block..................................passed
+And guest user click on Add to cart button..................................passed
+When guest user navigate to cart............................................passed
+And guest user Delete added product.........................................passed
+Then check cart items decreased by one......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
